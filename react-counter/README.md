@@ -1,16 +1,112 @@
-# React + Vite
+# React Counter with useEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project is an advanced React counter application created to demonstrate correct usage of React Hooks, specifically `useState` and `useEffect`. The application expands on basic counter functionality by implementing state dependencies, side effects, cleanup logic, keyboard event handling, and persistence using browser storage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The primary goal of this lab is to show an understanding of how React manages state and side effects within functional components.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features Implemented
 
-## Expanding the ESLint configuration
+- Display current counter value
+- Increment and decrement functionality
+- Custom step value input
+- Count history tracking
+- Auto-save functionality using localStorage
+- Keyboard controls (ArrowUp / ArrowDown)
+- Reset mechanism
+- Proper useEffect cleanup for side effects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- React (JavaScript)
+- Vite
+- React Hooks (`useState`, `useEffect`, `useCallback`)
+- Browser Local Storage API
+- JavaScript DOM Event Handling
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+2. Navigate into the project folder
+3. Install dependencies:
+
+   ```bash inside the Terminal
+
+   ```npm install
+
+## Start the development server
+
+```bash inside the Terminal
+
+npm run dev
+
+Open the local development URL provided in the terminal
+
+---
+
+## Learning Focus
+
+This project emphasizes:
+
+Managing multiple pieces of state within a single component
+
+Updating state using previous state values
+
+Understanding when useEffect is necessary
+
+Avoiding unnecessary effects for derived state
+
+Cleaning up side effects such as timers and event listeners
+
+Correct use of dependency arrays
+
+---
+
+## Resources Used
+
+The following official and educational resources were used to complete this project. These sources were referenced for correct syntax, best practices, and conceptual understanding.
+
+React Official Documentation
+
+React useState Hook
+https://react.dev/reference/react/useState
+
+React useEffect Hook
+https://react.dev/reference/react/useEffect
+
+You Might Not Need an Effect
+https://react.dev/learn/you-might-not-need-an-effect
+
+Rules of Hooks
+https://react.dev/reference/rules/rules-of-hooks
+
+MDN Web Docs
+
+JavaScript Event Handling
+https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event
+
+Window.localStorage
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+setTimeout and clearTimeout
+https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+
+Vite Documentation
+
+Vite React Setup
+https://vitejs.dev/guide/
+
+Course & Classroom References
+
+React Hooks lecture notes
+
+In-class examples covering state updates and effects
+
+Lab instructions provided for Module 416 – Advanced React Concepts
